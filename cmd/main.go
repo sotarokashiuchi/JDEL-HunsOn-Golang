@@ -39,7 +39,6 @@ func main() {
 		analyze.IsSafePrime(inputNumber[0])
 		analyze.IsKaprekarNumber(inputNumber[0])
 		analyze.IsFibonacciNumber(inputNumber[0])
-		analyze.IsXNumber(inputNumber[0])
 	case 2:
 		analyze.IsAmicableNumbers(inputNumber[0], inputNumber[1])
 		analyze.IsBetrothedNumber(inputNumber[0], inputNumber[1])

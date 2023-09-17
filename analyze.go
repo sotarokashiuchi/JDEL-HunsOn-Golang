@@ -47,14 +47,14 @@ func isEvenNumber(number int) {
 
 // グロタンディーク素数判定関数。与えられた引数がグロタンディーク素数の場合、その趣旨を表示する
 // グロタンディーク素数とは「57の数のこと」
-func isGrothendieckPrime(number int){
+func isGrothendieckPrime(number int) {
 	return
 }
 
 // レピュニット数判定関数。与えられた引数がレピュニット数の場合、その趣旨を表示する
 // レピュニット数とは「全ての桁の数字が 1である自然数のこと」
 // ex) 1, 11, 111, ...
-func isRepunitNumber(number int){
+func isRepunitNumber(number int) {
 	return
 }
 
@@ -89,105 +89,104 @@ func isSquareNumber(number int) {
 // メルセンヌ数判定関数。与えられた引数がメルセンス数の場合、その趣旨を表示する
 // メルセンヌ数とは「2^n-1で表される数」
 // ex) 1, 3, 7, 31, ...
-func isMersenneNumber(number int){
+func isMersenneNumber(number int) {
 	return
 }
 
 // 婚約数判定関数。与えられた引数が婚約数の場合、その趣旨を表示する
 // 婚約数とは「1と自身を除いた約数の和が互いに他方に等しい自然数の組」
 // ex) 48と75, 140と195, 1050と1925, ...
-func isBetrothedNumber(x, y int){
+func isBetrothedNumber(x, y int) {
 	return
 }
 
 // ピタゴラス数判定関数。与えられた引数がピタゴラス数の場合、その趣旨を表示する
 // ピタゴラス数とは「a^2 + b^2 = c^2 を満たす3つの自然数の組 (a, b, c) のこと」
 // ex) 3と４と5, 5と12と13, ...
-func isPythagoreanTriple(x, y, z int){
+func isPythagoreanTriple(x, y, z int) {
 	return
 }
 
 // セクシー素数判定関数。与えられた引数がセクシー素数の場合、その趣旨を表示する
 // セクシー素数とは「差が6の素数の組(p, p + 6)」
 // ex) 5と11, 7と13, 11と17, ...
-func isSexyPrimes(x, y int){
+func isSexyPrimes(x, y int) {
 	return
 }
 
 // 双子素数判定関数。与えられた引数が双子素数の場合、その趣旨を表示する
 // 双子素数とは「差が2である二つの素数の組」
 // ex) 3と5, 5と7, 11と13, ...
-func isTwinPrime(x, y int){
+func isTwinPrime(x, y int) {
 	return
 }
 
 // いとこ素数判定関数。与えられた引数がいとこ素数の場合、その趣旨を表示する
 // いとこ素数とは「差が4である素数の組」
 // ex) 3と7, 7と11, 13と17, ...
-func isCousinPrimes(x, y int){
+func isCousinPrimes(x, y int) {
 	return
 }
 
 // タクシー数判定関数。与えられた引数がタクシー数の場合、その趣旨を表示する
 // タクシー数とは「2つの立方数の和として表すことができる数(x^3 + y^3 = N)」
 // ex) 2 (= 1^3 + 1^3), 1792 (= 1^3 + 12^3, = 9^3 + 10^3), ...
-func isTaxicabNumber(number int){
+func isTaxicabNumber(number int) {
 	return
 }
 
 // ソフィー・ジェルマン素数判定関数。与えられた引数がソフィー・ジェルマン素数の場合、その趣旨を表示する
 // ソフィー・ジェルマン素数とは「pと2p+1が共に素数である時のpのこと」
 // ex) 2, 3, 5, 11, ...
-func isSophieGermainPrime(number int){
+func isSophieGermainPrime(number int) {
 	return
 }
 
 // 安全素数判定関数。与えられた引数が安全素数の場合、その趣旨を表示する
 // 安全素数とは「pと2p+1が素数である時の2p+1のこと」
 // ex) 5, 11, 23, 83, ...
-func isSafePrime(number int){
+func isSafePrime(number int) {
 	return
 }
 
 // 最小公倍数判定関数。与えられた引数が最小公倍数の場合、その趣旨を表示する
 // 最小公倍数とは「0ではない複数の整数の公倍数のうち共通する最小の自然数を指す」
 // ex) 12と9の最小公倍数は36, ...
-func getLeastCommonMultiple(x, y int){
+func getLeastCommonMultiple(x, y int) {
 	return
 }
 
 // 最大公約数判定関数。与えられた引数が最大公約数の場合、その趣旨を表示する
 // 最大公約数とは「２つ以上の正の整数に共通な約数（公約数）のうち最大のもの」
 // ex) 12と9の最大公約数は3, ...
-func getGreatestCommonDivisor(x, y int){
+func getGreatestCommonDivisor(x, y int) {
 	return
 }
 
 // カプレカ数ー判定関数。与えられた引数がカプレカ数ーの場合、その趣旨を表示する
 // カプレカ数ーとは「桁を並べ替えて最大にした数と最小にした数との差を取ったとき、元の値に等しくなる自然数」
 // ex) 1, 9, 45, 55, 99, 297, ...
-func isKaprekarNumber(number int){
+func isKaprekarNumber(number int) {
 	return
 }
 
 // フィボナッチ数判定関数。与えられた引数がフィボナッチ数の場合、その趣旨を表示する
 // フィボナッチ数とは「フィボナッチ数列の項に該当する数」
 // ex) 0, 1, 1, 2, 3, 5, 8, 13, ...
-func isFibonacciNumber(number int){
+func isFibonacciNumber(number int) {
 	return
 }
 
 // フリードマン数判定関数。与えられた引数がフリードマン数の場合、その趣旨を表示する
 // フリードマン数とは「自然数のうち、その数に使われている数字を全て用いて、(I) 四則演算、(II) 累乗、(III) 複数個の数字を合わせて2桁以上の数にする、という3つの方法のうち少なくとも1つを用いて数式を作ることで元の数に一致させられる数のこと。ただし(III)の方法だけでフリードマン数を作ることはできないものとする。」
 // ex) 25 = 5^2 , 121 = 11^2 , 125 = 5^(1+2)
-func isFriedmanNumber(x, y int){
+func isFriedmanNumber(x, y int) {
 	return
 }
 
 // $判定関数。与えられた引数が$の場合、その趣旨を表示する
 // $とは「」
-// ex) 
-func isXNumber(number int){
+// ex)
+func isXNumber(number int) {
 	return
 }
-

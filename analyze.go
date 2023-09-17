@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// 入力を受付、入力された整数の個数に合わせて各分析用関数を呼び出す関数。
 func main() {
 	var inputNumber []int
 	var inputNumberTotal int
@@ -30,66 +31,51 @@ func main() {
 	}
 }
 
+
+// 奇数判定関数。与えられた引数が奇数の場合、その趣旨を表示する
+// 奇数とは、「2で割り切れない整数」
+// ex) 1,3,5,7,...
 func isOddNumber(number int) {
-	if number%2 == 1 {
-		fmt.Println(number, "は奇数です")
-	}
 	return
 }
 
+// 偶数判定関数。与えられた引数が偶数の場合、その趣旨を表示する
+// 偶数とは、「2で割り切れる整数」
+// ex) 2,4,6,8,...
 func isEvenNumber(number int) {
-	if number%2 == 0 {
-		fmt.Println(number, "は偶数です")
-	}
 	return
 }
 
+// 素数判定関数。与えられた引数が素数の場合、その趣旨を表示する
+// 素数とは「1を除く約数が1とその数自身だけである自然数」
+// ex) 2,3,5,7,...
 func isPrimeNumber(number int) {
-	var i int
-	if number <= 1 {
-		return
-	}
-	for i = 2; i < number; i++ {
-		if number%i == 0 {
-			return
-		}
-	}
-	fmt.Println("素数です！")
 	return
 }
 
+// 完全数判定関数。与えられた引数が完全数の場合、その趣旨を表示する
+// 完全数とは「自身を除く約数の和が自身に等しい数の自然数」
+// ex) 6,28,496,...
 func isPerfectNumber(number int) {
-	var i, sum int
-	for i = 1; i < number; i++ {
-		if number%i == 0 {
-			sum += i
-		}
-	}
-	if sum == number {
-		fmt.Println(number, "は完全数でえす")
-	}
 	return
 }
 
+// 親和数判定関数。与えられた引数が親和数の場合、その趣旨を表示する
+// 親和数とは「自身を除く約数の和が、他方に等しい自然数の組」
+// ex) 220と284, 1184と1210, 2620と2924,...
 func isAmicableNumbers(x, y int) {
-	var i int
-	var sum int
-	var sum3 int
-	for i = 1; i < x; i++ {
-		if x%i == 0 {
-			sum = sum + i
-		}
-	}
-	if sum == y {
-		for i = 1; i < y; i++ {
-			if y%i == 0 {
-				sum3 = sum3 + i
-			}
-		}
-		if sum3 == x {
-			fmt.Println("親和数です！")
-		}
-
-	}
 	return
 }
+
+// 平方数。与えられた引数が平方数の場合、その趣旨を表示する
+func isSquareNumber(number int) {
+	return
+}
+
+// メルセンヌ数判定関数。与えられた引数がメルセンス数の場合、その趣旨を表示する
+// メルセンヌ数とは「2^n-1で表される数」
+// ex) 1,3,7,31|
+func isMersenneNumber(number int){
+	return
+}
+

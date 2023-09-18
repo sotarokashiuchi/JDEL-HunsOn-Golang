@@ -12,3 +12,10 @@
 - [仕様書](./docs/analyze.pdf)
 - [参考サイト](https://blog-knowledgequiz.com/number/)
 
+## 実行方法
+```shell
+$ make run
+又は
+$ go run cmd/main.go
+```
+

@@ -17,6 +17,9 @@ func IsOddNumber(number int) {
 // 偶数とは、「2で割り切れる整数」
 // ex) 2, 4, 6, 8, ...
 func IsEvenNumber(number int) {
+	if number%2 == 0 {
+		fmt.Println(number, "は偶数です")
+	}
 	return
 }
 

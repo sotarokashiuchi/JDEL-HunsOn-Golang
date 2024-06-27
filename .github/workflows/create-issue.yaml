@@ -1,6 +1,6 @@
 name: create template issue
 on:
-  - push
+  - workflow_dispatch
 permissions:
   contents: read
   issues: write 
